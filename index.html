@@ -1,0 +1,128 @@
+{% load static %}
+
+<!doctype html>
+<html jang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="ようこそ、ここはBookItoのECサイトです。">
+    <link href="https://favicon.ico" rel="icon">
+    <link rel="stylesheet" href="../../static/register/css/recet.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../../static/register/css/style2.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://use.typekit.net/ujv0qkd.css">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/icon3.png' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <link rel="stylesheet" href="https://use.typekit.net/onj3yvt.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mef1nay.css">
+    <div id="page_top"><a href="#"></a></div>
+
+    <title>Book Store</title>
+</head>
+
+<body>
+
+
+    <div id="container">
+    <header>
+        <a href="{% url 'register:index' %}" class="top"><img class="h1-img" src="{% static 'images/h1-icon.png' %}" ><h1></h1></a>   
+
+        <nav>
+            <ul>
+                {% if user.pk == faluse %}
+                <li><a href="{% url 'register:login' %}" class="btn-border">LOGIN</a></li>
+                <li><a href="{% url 'register:login' %}" class="btn-border">CART</a></li>
+                {% else %}
+                <li><a href="{% url 'register:top' %}" class="btn-border">MY PAGE</a></li>
+                <li><a href="{% url 'register:basket' user.pk %}" class="btn-border">CART</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="search-box">
+        
+        <form action="" method="get"  class="search-form">
+            <div class="input-group">
+                <input class="sbox"  name="keyword" value="{{ request.GET.keyword }}" type="text" placeholder="　キーワードを入力">
+                <span class="input-group-btn">
+                    <button type="submit">検索</button>
+                </span>
+            </div>
+        </form>
+        <div class="welcome">
+            {% if user.is_authenticated %}
+            <p class="hello">こんにちは、{{ user.last_name }}さん</p>
+            {% else %}
+            <p class="hello">こんにちは、ゲストさん</ｐ>
+            {% endif %}
+        </div>
+    </div>
+        
+    <div id="contents">
+    <h2>
+        {% if request.GET.keyword %}
+            {% if not books %}
+                「{{ request.GET.keyword }}」は見つかりませんでした。
+            {% else %}
+                「{{ request.GET.keyword }}」の検索結果一覧
+            {% endif %}
+        {% else %}
+            商品一覧
+        {% endif %}
+    </h2>
+        <section class="home-display">
+            {% for book in books %}
+            <div class="book-size ">
+                <a href="{% url 'register:detail' book.pk %}">
+                <img src="{{ book.image.url }}" class="img-book"></a>
+                <div class= "book-moji">
+                <div>{{ book.title | truncatechars:15 }}</div>
+                <div>{{ book.author | truncatechars:15 }}</div>
+                <div>{{ book.publish | truncatechars:15 }}</div>
+                <div>{{ book.price | truncatechars:15 }}円</div>
+                    
+
+                
+                {% if user.id == false %}
+                <form action="" method="post">
+                    {% csrf_token %}
+
+                    <input type="hidden" value="" name="user_id">
+                    <input type="hidden" value={{book.pk}} name="pk">
+                    <button type="submit" class="btn-cart">カートに入れる</button>
+                </form>
+                {% else %}
+                {% if book.stock == 0 %}
+                <h3>入荷待ちです</h3>
+                {% else %}
+                <form action="" method="post">
+                {% csrf_token %}
+                <input type="hidden" value={{user.id}} name="user_id">
+                <input type="hidden" value={{book.pk}} name="pk">
+                <button type="submit" class="btn-cart">カートに入れる</button>
+                    
+                </form>
+                {% endif %}
+                {% endif %}
+                    
+            </div>
+        </div>
+                
+            </a>
+        {% endfor %}
+
+            
+            
+
+    </section>
+        <div class="nav-links">
+            {% include 'register/_pagenation.html' %} <!-- 追加 -->
+        </div>
+        </div>
+    <footer>
+        <p>&copy;Book Store</p>
+    </footer>
+    </div>
+</body>
+</html>
