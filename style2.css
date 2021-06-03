@@ -1,0 +1,1372 @@
+
+  
+/*          Web version         */
+
+
+@media (min-width: 700px){
+    
+
+    
+/*------------------------------\
+            #Body
+\ -----------------------------*/
+
+#container{
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+}
+
+body{
+    color:#666;
+
+}
+
+/*          #Header            */
+
+header{
+    padding:1.5em;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 0;
+font-family: adobe-handwriting-frank, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+}
+
+
+
+
+h1{
+    vertical-align:middle;
+    color:#009bc6;
+    font-size:80px;
+    font-family: adobe-handwriting-ernie,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.h1-img{
+    width:400px;
+}
+
+.top,.top:visited,.top:active{
+    text-decoration:none;
+    color:#009bc6;
+}
+
+img.icon{
+    width:80px;
+    height:80px;
+    margin:0 20px;
+    display:flex;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:1em;
+}
+
+.btn-border{
+    display: inline-block;
+    max-width: 180px;
+    border: 2px solid #82aaaa;
+    font-size: 16px;
+    color: #82aaaa;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: .4s;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.btn-border:hover{
+    background-color: #82aaaa;
+    border-color: #82aaaa;
+    color: #FFF;
+}
+
+
+/*        #search-box          */
+
+.search-box{
+    padding:2.5em;
+    background-color:#a0cce2;
+    width: unset;
+    vertical-align: middle;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:auto;
+    background:linear-gradient(#A4C6FF, #fff);
+background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.sbox{
+    border-radius: 4px;
+    border: 2px solid #82aaaa;
+    margin-left:20px;
+}
+
+button{
+    display: inline-block;
+    
+    text-align: left;
+    border: 2px solid #82aaaa;
+    font-size: 14px;
+    color: #82aaaa;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 10px 2px;
+    border-radius: 4px;
+    transition: .4s;
+    height: 40px;
+}
+
+button:hover{
+    background-color: #82aaaa;
+    border-color: #82aaaa;
+    color: #FFF;
+}
+
+.welcom{
+    margin-right:40px;
+    color:#fff;
+    line-height:2.5;
+}
+
+.hello{
+    margin-right:40px;
+    color:#fff;
+
+    }
+
+.top-login{
+    text-decoration:none;
+    font-size:12px;
+    color:#fff;
+}
+
+.top-login{
+    color:#fff;
+}
+
+
+/*       Contents       */
+
+
+h2{
+    font-size:30px;
+    margin: 2em 2em 0 3em;
+    color:#666666;
+}
+
+.home-display{
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 2em 2em 5em 2em;
+    width: 100%;
+    display:flex;
+}
+
+.book-size{
+    width:180px;
+    margin: 10px 25px 10px 25px;
+    display:inline-block;
+    font-size:15px;
+    color:#666;
+    padding-left: 12.5px;
+}
+
+.book-moji{
+    font-size:12px;
+    text-align:left;
+}
+
+
+.img-book{
+    width:180px;
+    height:255px;
+    margin-bottom:10px;
+}
+
+
+.btn-cart{
+    display: flex;
+    max-width: 100px;
+    text-align: left;
+    border: 2px solid #82aaaa;
+    font-size: 10px;
+    color: #82aaaa;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1px 8px 1px;
+    border-radius: 4px;
+    transition: .4s;
+    background-color:#fff;
+    height:30px;
+    vertical-align:middle;
+    line-height:2.5;
+}
+
+.btn-cart:hover{
+    background-color: #82aaaa;
+    border-color: #82aaaa;
+    color: #FFF;
+}
+
+
+
+
+/*------------------------------\
+        #Book Detail Page
+\ -----------------------------*/
+
+
+.search-box-detail{
+    padding:3.1em;
+    background-color:#a0cce2;
+
+    vertical-align: middle;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:auto;
+}
+
+
+
+.hidden-search-box{
+    padding:2.5em;
+    background-color:#a0cce2;
+    width: unset;
+    text-align:right;
+    background:linear-gradient(#A4C6FF, #fff);
+background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.hidden-search-form{
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+
+input.sbox{
+    height:35px;
+}
+
+.detail-display{
+    display: flex;
+    padding: 5em;
+    align-items: center;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.detail-img{
+    margin: 0 auto;
+    padding-right:2em;
+
+    
+}
+
+.buy-memo{
+    color:#666;
+}
+
+
+.info-item{
+    margin: 0 auto;
+}
+
+.book-info{
+    line-height:30px;
+    color:#666;
+}
+
+
+.buy{
+    display:flex;
+    align-items:center;
+}
+
+.btn-buy{
+    display: inline-block;
+    max-width: 180px;
+    text-align: left;
+    border: 2px solid #bd1111;
+    font-size: 16px;
+    color: #bd1111;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1px 12px;
+    border-radius: 4px;
+    transition: .4s;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    vertical-align:middle;
+    line-height: 50px;
+}
+
+.btn-buy:hover{
+    background: #ffffff;
+    border: solid 2px #bd1111;
+    color: #e41313;
+    opacity: 0.8;
+}
+
+input.number{
+    width:50px;
+    height:40px;
+    font-size:14px;
+    padding-left: 10px;
+    text-align: center;
+    display:flex;
+    margin-right:15px;
+}
+
+.detail-btn{padding:3px 0;}
+
+
+/*------------------------------\
+          #pagenation
+\ -----------------------------*/
+
+.nav-links{
+  padding:1em;
+  display:flex;
+  justify-content:center;
+  background:#D7EEFF;
+  width:auto;
+
+}
+
+
+
+
+
+
+
+
+.size{
+  width:50px;
+  height:50px;
+  margin:2px;
+  line-height:50px;
+  text-align:center;
+  font-size:14px;
+  font-weight:bold;
+  text-decoration:none;
+  background:#fff;
+  color:#222;
+  transition:.3s;
+}
+
+.page-bg:hover{
+  background:#82aaaa;
+  color:#fff;
+}
+.current{
+  background:#82aaaa;
+  color:#fff;
+}
+.dots{
+  background:none;
+}
+
+/*------------------------------\
+            #MyPage
+\ -----------------------------*/
+
+
+.mypage-menu{
+    width:35%;
+    margin: 0 auto;
+    padding:20px;
+}
+
+.menu-btn{
+    display: inline-block;
+    max-width: 180px;
+    border: 2px solid #82aaaa;
+    font-size: 16px;
+    color: #82aaaa;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: .4s;
+    width: 2000px;
+    height: 60px;
+    text-align: center;
+    margin:15px;
+    line-height: 4;
+    
+}
+
+.menu-btn:hover{
+    background-color: #82aaaa;
+    border-color: #82aaaa;
+    color: #FFF;
+}
+
+
+.menu-sub{
+    text-align: center;
+    display:flex;
+}
+
+.nav-menu{
+    width:35%;
+    margin:0 auto;
+    padding:20px;
+}
+
+.welcome-login{
+    color:#009bc6;
+    display: inline-block;
+    transition: .3s;
+    text-decoration:none;
+}
+
+.welcome-login::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #31aae2;
+    transition: .3s;
+    transform: translateX(-50%);
+}
+
+.welcome-login:hover::after{
+    width: 100%;
+}
+
+/*       Password-change       */
+
+.pc{
+    margin: 5em;
+    text-align: center;
+}
+
+.pc-cont{
+    text-align:center;
+}
+
+.send-btn{
+        display:flex;
+}
+
+.center{
+    margin:0 auto;
+}
+/*------------------------------\
+            #Footer
+\ -----------------------------*/
+
+footer{
+
+    text-align:center;
+    width:auto;
+    color:#666;
+    background:linear-gradient(#A4C6FF, #fff);
+    background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*------------------------------\
+            #basket
+\ -----------------------------*/
+
+.table-flex{
+    display:flex;
+    padding: 2em 5em;
+    border-collapse:collapse;
+    justify-content:center;
+    vertical-align:top;
+}
+
+.basket-contents{
+    display: flex;
+    padding: 30px;
+    width: auto;
+    vertical-align: top;
+}
+
+
+.check-total{
+    padding:30px;
+    width:auto;
+    align-items:center;
+    
+}
+
+.delete-btn{
+    text-align:center;
+}
+
+.delete{
+    align-items:center;
+}
+
+table{
+    text-align:left;
+    color: #666;
+    padding: 1em;
+    height:auto;
+    border-collapse:collapse;
+    display:flex;
+}
+
+.total{
+    width:400px;
+}
+
+
+
+td, th {
+border-bottom:solid 1px gray;
+}
+
+.basket-btn{
+    width:30%;
+    margin:0 auto;
+    padding:20px;
+    align-items:center;
+}
+
+.next-btn{
+    display:inlineblock;
+    text-align:center;
+}
+
+.buy-next{
+    display: inline-block;
+    max-width: 180px;
+    border: 2px solid #82aaaa;
+    font-size: 16px;
+    color: #82aaaa;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: .4s;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    margin: 30px;
+
+}
+
+.buy-next:hover{
+    background-color: #82aaaa;
+    border-color: #82aaaa;
+    color: #FFF;
+}
+
+
+
+/*------------------------------\
+              #buy
+\ -----------------------------*/
+
+.final-contents{
+    text-align:center;
+    margin:2em;
+}
+
+.final-detail{
+    align-items:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-user{
+    text-align:left;
+    color: #666;
+    display: flex;
+    padding: 2em 5em;
+    height:auto;
+    border-collapse:collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tbl-user{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.purchase{
+    display: inline-block;
+    max-width: 180px;
+    border: 2px solid #82aaaa;
+    font-size: 16px;
+    color: #82aaaa;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: .4s;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    margin: 30px;
+}
+
+.purchase:hover{
+    background-color: #82aaaa;
+    border-color: #82aaaa;
+    color: #FFF;
+}
+
+
+
+/*------------------\
+     #buy追加文　5/26
+\ -----------------*/
+
+
+td.money{
+    text-aligh:right;
+}
+
+
+
+.cart-back {
+  position: relative;
+  display: inline-block;
+  color: #82aaaa;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  line-heigt: 1.2em;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.cart-back:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cart-back::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #82aaaa;
+  transform: scale(0.5, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+
+.cart-back:hover::after {
+  transform: scale(1, 1);
+}
+
+
+
+
+
+/*-----------------------\
+     #td.th変更あり
+\ ----------------------*/
+
+td, th {
+border-bottom:solid 1px gray;
+padding:5px 7px; 
+}
+
+.value{
+    width:40px;
+    margin:5px;
+}
+
+
+/*------------------------------\
+      #user-detail追加
+\ -----------------------------*/
+
+tbody{
+    margin:0 auto;
+    }
+    
+    
+/*------------------------------\
+     #user-create-done追加
+\ -----------------------------*/
+.user_create{
+    padding:20px;
+}
+    
+/*------------------------------\
+      #password-change追加
+\ -----------------------------*/
+.form-group{
+margin:8px;
+text-align:center;
+}
+
+.pass-change{
+margin:0 auto;
+}
+
+button.btn.btn-primary.btn-lg {
+    display: block;
+}
+
+.btn-lg {
+    margin:0 auto;
+}
+
+
+/*------------------------------\
+  #password-change_done 5/26追加
+\ -----------------------------*/
+
+.pw_change_done{
+    color:#666;
+    padding:8px;
+    text-align:center;
+}
+
+
+/*------------------------------\
+          #login追加 5/26
+\ -----------------------------*/
+
+.card-body{
+    text-align:center;
+}
+
+
+.login-all{
+    display:flex;
+    padding: 2em 5em;
+    border-collapse:collapse;
+    justify-content:center;
+    vertical-align:top;
+    decoration:none;
+    
+}
+
+.login-left{
+    display: flex;
+    padding: 30px;
+    width: auto;
+    vertical-align: top;
+    text-decoration:none;
+}
+
+
+.login-right{
+    padding:0 30px;
+    width:auto;
+    align-items:center;
+    vertical-align:top;
+    text-decoration:none;
+    
+}
+
+.btn-login{
+    display: inline-block;
+    max-width: 180px;
+    border: 2px solid #82aaaa;
+    font-size: 16px;
+    color: #82aaaa;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: .4s;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+}
+
+
+
+.a-login{
+    color: #82aaaa;
+    text-decoration:none;
+    font-size: 14px;
+
+}
+
+.a-login:hover{
+    background-color: #82aaaa;
+    border-color: #82aaaa;
+    color: #FFF;
+}
+
+/*------------------------------\
+     #user-form追加 5/26
+\ -----------------------------*/
+.user_form_button{
+    padding:0 0 8px 0;
+}
+
+
+
+/*       Password-change       */
+
+.form{
+  margin: 10px 25em 0;
+
+}
+
+.disflex{
+  display: flex;
+  justify-content: space-between;
+  color: :#666;
+  margin:5px;
+}
+
+/*------------------------------\
+     #completed追加 5/26
+\ -----------------------------*/
+
+.thanks{
+    text-align:center;
+    color:#666;
+    margin:35px 20px 0 20px;
+}
+
+
+
+
+.completed{
+
+    
+}
+
+
+.completed img{
+    width:20%;
+    margin:0 auto;
+    
+}
+
+
+
+#page_top{
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #3f98ef;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: #3f98ef;
+}
+
+
+
+
+}
+
+
+
+/*         mobile version          */
+
+@media (max-width: 700px){
+    
+    body{
+        color:#666;
+    }
+    
+    header{
+        flex-direction:colum;
+        align-items:center;
+    }
+    
+    h1{
+        color:#009bc6;
+        font-family: adobe-handwriting-ernie,sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size:50px;
+        display:flex;
+        align-items:center;
+    }
+
+    .h1-img{
+        width:250px;
+    }
+ 
+    .top{
+        display:flex;
+        justify-content:center;
+        margin: 15px 15px 0 15px;
+    }
+    
+    .top,.top:visited,.top:active{
+        text-decoration:none;
+        color:#009bc6;
+    }
+    
+    img.icon{
+        width:50px;
+        height:50px;
+        margin:0 20px;
+        display:flex;
+        align-items:center;
+    }
+    
+    nav{
+        
+    }
+    
+    nav ul{
+       text-align:center;
+       padding: 10px;
+    }
+    
+    nav li{
+        display:inline;
+    }
+    
+    .btn-border{
+    display: inline-block;
+    border: 2px solid #82aaaa;
+    font-size: 10px;
+    color: #82aaaa;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: .4s;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    line-height: 30px;
+
+    }
+
+    .btn-border:hover{
+        background-color: #82aaaa;
+        border-color: #82aaaa;
+        color: #FFF;
+    }
+    
+    .serch-box{
+        background-color:#a0cce2;
+        width:auto;
+        
+        
+    }
+    
+    .sbox{
+        width: 150px;
+        height:20px;
+        font-size:10px;
+        border-radius: 4px;
+        border: 2px solid #82aaaa;
+        margin-left:20px;
+    }
+
+
+
+
+
+.hidden-search-box{
+
+    background-color:#a0cce2;
+    width: auto;
+    text-align:center;
+    vertical-align:center;
+    padding:10px;
+    background:linear-gradient(#A4C6FF, #fff);
+    background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:#fff;
+}
+
+.hidden-search-form{
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+
+
+
+
+ 
+    button{
+        height:25px;
+        font-size:10px;
+        color: #82aaaa;
+        border: 2px solid #82aaaa;
+        border-radius: 4px;
+        transition: .4s;
+
+    }
+    
+    .input-group{
+        padding:30px;
+        width:auto;
+        background:linear-gradient(#A4C6FF, #fff);
+        background: #74ebd5;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+    .hello{
+        text-align: center;
+        margin: 15px;
+        color: #fff;
+        font-size: 12px;
+    }
+    
+    #contents{
+        margin:20px 0;
+    }
+    
+    h2{
+        color:#999;
+        font-size:15px;
+        margin: 1em;
+    }
+    
+    .book-size{
+        text-align:center;
+        padding-left:0 45px;
+        margin-bottom:20px;
+
+    }
+    
+    .book-size img{
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    .nav-links{
+          padding:1em;
+          display:flex;
+          justify-content:center;
+          background:#D7EEFF;
+          width:auto;
+        }
+        
+    .size{
+          width:40px;
+          height:40px;
+          margin:2px;
+          line-height:40px;
+          text-align:center;
+          font-size:14px;
+          font-weight:bold;
+          text-decoration:none;
+          background:#fff;
+          color:#222;
+          transition:.3s;
+        }
+        
+    .page-bg:hover{
+          background:#82aaaa;
+          color:#fff;
+        }
+    .current{
+          background:#82aaaa;
+          color:#fff;
+        }
+    .dots{
+          background:none;
+        }
+    
+    .detail-display{
+        width: 80%;
+        margin: 0 auto;
+        text-align:center;
+    }
+    
+    .detail-display img{
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    .detail-img img{
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    .value{
+        width: 60px;
+        height:20px;
+    }
+    
+    footer{
+        background-color:#b3d0d7;
+        text-align:center;
+        width:auto;
+        color:#9933ff;
+        background:linear-gradient(#A4C6FF, #fff);
+        background: #74ebd5;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+    
+#page_top{
+  width: 50px;
+  height: 60px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  
+
+  padding:20px 20px;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+
+  font-size: 25px;
+  
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+
+/*------------------------------\
+            #detail
+\ -----------------------------*/
+
+.detail-btn{padding:3px 0;}
+
+
+/*------------------------------\
+            #MyPage
+\ -----------------------------*/
+
+
+.mypage-menu{
+    width:35%;
+    margin: 0 auto;
+    padding:20px;
+}
+
+
+.menu-btn {
+    display: inline-block;
+    border: 2px solid #82aaaa;
+    font-size: 12px;
+    color: #82aaaa;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: .4s;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.menu-btn:hover{
+    background-color: #82aaaa;
+    border-color: #82aaaa;
+    color: #FFF;
+}
+
+
+
+
+.menu-sub{
+    text-align: center;
+
+}
+
+.nav-menu{
+    width:35%;
+    margin:0 auto;
+    padding:20px;
+}
+
+.welcome-login{
+    color:#009bc6;
+    display: inline-block;
+    transition: .3s;
+    text-decoration:none;
+}
+
+.welcome-login::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #31aae2;
+    transition: .3s;
+    transform: translateX(-50%);
+}
+
+.welcome-login:hover::after{
+    width: 100%;
+}
+
+
+.mypage-menu {
+    display: block;
+    list-style-type: disc;
+}
+
+
+
+
+
+/*       Password-change       */
+
+.pc{
+    margin: 5em;
+    text-align: center;
+}
+
+.pc-cont{
+    text-align:center;
+}
+
+.send-btn{
+        display:flex;
+}
+
+.center{
+    margin:0 auto;
+}
+    
+   
+   
+/*       login       */  
+
+
+.login-all{
+padding:2em;
+}
+
+
+ .btn-login{
+        height:25px;
+        font-size:10px;
+        color: #82aaaa;
+        border: 2px solid #82aaaa;
+        border-radius: 4px;
+        transition: .4s;
+}
+
+
+
+.a-login{
+    color: #82aaaa;
+    text-decoration:none;
+    font-size: 10px;
+
+}
+
+.a-login:hover{
+    background-color: #82aaaa;
+    border-color: #82aaaa;
+    color: #FFF;
+
+}
+  
+/*       user-update       */  
+
+
+.user-form-button{
+    margin:0 auto;
+    
+}
+   
+    
+    }
+  
+  
+  
+  
